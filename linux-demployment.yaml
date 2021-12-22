@@ -15,10 +15,8 @@ spec:
         app: linux
     spec:
       containers:
-      - image: ubuntu
+      - image: localhost:5000/test-ubuntu
         command:
-          - "apt update"
-          - "apt install wget"
           - "sleep"
           - "604800"
         imagePullPolicy: IfNotPresent
