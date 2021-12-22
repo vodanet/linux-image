@@ -1,0 +1,7 @@
+FROM ubuntu
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update
+RUN apt install wget -y
+RUN apt install iputils-ping -y
+RUN apt install lynx -y
+RUN apt install mc -y

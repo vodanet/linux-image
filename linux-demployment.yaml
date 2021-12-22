@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linux-deployment
+  labels:
+    app: linux
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: linux
+  template:
+    metadata:
+      labels:
+        app: linux
+    spec:
+      containers:
+      - image: ubuntu
+        command:
+          - "apt update"
+          - "apt install wget"
+          - "sleep"
+          - "604800"
+        imagePullPolicy: IfNotPresent
+        name: ubuntu
+
