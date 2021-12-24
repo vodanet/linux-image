@@ -6,3 +6,11 @@ Befehle anzeigen:
 ps -eaf | grep sleep
 
 Zeigt wer den Sleep Befehl im Docker Container ausführt... root, oder ein angelegter User
+
+
+Script Installing Openvpn
+https://github.com/angristan/openvpn-install
+
+
+Enabling TUN 
+https://help.skysilk.com/support/solutions/articles/9000136471--intermediate-how-to-enable-tun-tap-on-linux-vps-with-skysilk
